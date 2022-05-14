@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Module 10 exercise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="font-awesome.min.css">
+</head>
+
+<body>
+  <div>
+    <div class="contentContainer">
+      <div class="contentHeader">
+        <span>Todo List</span>
+        <div class="input-wrapper">
+          <input type="text" id="searchField" class="searchField" placeholder="Search...">
+        </div>
+      </div>
+      <div id="main">
+        <div id="newTaskBlock">
+          <input type="text" id="newTaskInput" placeholder="New task...">
+          <input type="button" id="addNewTaskBtn" value="ADD">
+        </div>
+        <div id="todoList">
+          <div class="listHeader" id="todoHeader">
+            <span>Open</span>
+            <span>
+              <select class="sortBy">
+                <option selected="selected">Creation date(Asc)</option>
+                <option>Creation date(Desc)</option>
+                <option>Records(Asc)</option>
+                <option>Records(Desc)</option>
+              </select>
+            </span>
+          </div>
+          <table id="todoTable" class="taskTable">
+          </table>
+        </div>
+        <div class="clearListDiv">
+          <a href="#" id="clearTodoList">Clear "Open" list</a>
+        </div>
+        <!-- <br> -->
+        <div id="doneList">
+          <div class="listHeader" id="doneHeader">
+            <span>Done</span>
+            <span>
+              <select class="sortBy">
+                <option>Creation date(Asc)</option>
+                <option>Creation date(Desc)</option>
+                <option selected="selected">Text(Asc)</option>
+                <option>Text(Desc)</option>
+              </select>
+            </span>
+          </div>
+          <table id="doneTable" class="taskTable">
+          </table>
+        </div>
+        <div class="clearListDiv">
+          <a href="#" id="clearDoneList">Clear "Done" list</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
